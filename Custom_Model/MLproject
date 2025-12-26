@@ -1,0 +1,7 @@
+name: Custom_Model
+
+entry_points:
+  model_run:
+    parameters:
+      threshold: {type: float, default: 0.5}
+    command: "python src/model_run.py --threshold {threshold}"
